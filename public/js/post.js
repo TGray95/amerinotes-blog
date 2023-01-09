@@ -3,7 +3,7 @@ const postFormHandler = async (event) => {
   
     const post_text = document.querySelector('#new-post').value;
     const state_id = sessionStorage.getItem('currentState')
-  console.log(post_text)
+
     if (post_text) {
       const response = await fetch('/api/post', {
         method: 'POST',
@@ -19,6 +19,11 @@ const postFormHandler = async (event) => {
     }
   };
   
+  function auto_grow(element) {
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight)+"px";
+}
+
   document
     .querySelector('#post-button')
     .addEventListener('click', postFormHandler);

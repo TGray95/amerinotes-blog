@@ -11,8 +11,6 @@
       <br>
       Size:
       {{state.size}}
-      <br>
-      Fun Fact:
     </p>
   </div>
 </div>
@@ -25,12 +23,12 @@
 {{/if}}
   {{#each state.posts}}
   <div class="bg-light">
-    <div class=''>
+    <div class='post-body'>
       <p>
         {{post_text}}
       </p>
     </div>
-    <div class=''>
+    <div class='post-author'>
       <p>
         Posted by:
         {{user.username}}
@@ -40,13 +38,13 @@
   {{/each}}
   {{#if loggedIn}}
   <div class="d-flex flex-column align-items-center">
-    <input type="text" placeholder="Enter post text" id="new-post"></input>
+    <textarea oninput="auto_grow(this)" maxlength="300" placeholder="Enter post text (max 300 characters)" id="new-post"></textarea>
       <button class="btn btn-outline-primary btn-sm" id="post-button">
         <p>Create new post</p>
       </button>
   </div>
   {{else}}
-  <a href="/login">Log in</a><span> or </span><a href="/signup">Sign up</a><span>to create posts!</span>
+  <a href="/login">Log in</a><span> or </span><a href="/signup">Sign up</a><span> to create posts!</span>
   {{/if}}
   
   </div>

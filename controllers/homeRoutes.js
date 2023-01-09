@@ -10,7 +10,7 @@ router.get('/login', (req, res) => {
   });
   
   router.get('/', (req, res) => {
-    if (req.session.logged_in) {
+    if (!req.session.logged_in) {
         res.redirect('/login')
         //if already logged in, default to displaying NC info and posts
     } else res.redirect('/api/state/33')

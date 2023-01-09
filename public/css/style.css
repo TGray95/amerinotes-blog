@@ -1,5 +1,5 @@
 /* body{
-    background-image: url(/images/background_img.jpg);
+    background-image: url(/images/paper.jpg);
 } */
 
 /* header{
@@ -11,6 +11,10 @@
 .state-button{
     height: 50px;
     width: 50px;
+}
+
+#new-post{
+    width:400px;
 }
 
 #post-button{
