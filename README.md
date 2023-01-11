@@ -20,7 +20,9 @@
   ## Contributing
 
   Contributers: Tony Gray, Zachary Ellis, David Truitt, and Matt Lahey
-  N/A
+  
+  ##Application Screenshot
+  ![](/images/amerinotes-screenshot.PNG)
   ## Questions
 
   [GitHub](https://github.com/TGray95) <br>
